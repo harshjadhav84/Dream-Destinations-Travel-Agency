@@ -68,3 +68,28 @@ To run the project locally on your computer, follow these steps:
 
 5. **Test the Features**:
    - Navigate through all the pages (e.g., Destinations, About Us, Contact Us) to explore the functionality.
+  
+## Screenshots
+
+Here are the screenshots of the entire website showcasing its features and pages:
+
+![Screenshot 1](screen_shots/screenshot1.png)
+![Screenshot 2](screen_shots/screenshot2.png)
+![Screenshot 3](screen_shots/screenshot3.png)
+![Screenshot 4](screen_shots/screenshot4.png)
+![Screenshot 5](screen_shots/screenshot5.png)
+![Screenshot 6](screen_shots/screenshot6.png)
+![Screenshot 1](screen_shots/screenshot7.png)
+![Screenshot 2](screen_shots/screenshot8.png)
+![Screenshot 3](screen_shots/screenshot9.png)
+![Screenshot 4](screen_shots/screenshot10.jpg)
+![Screenshot 5](screen_shots/screenshot11.jpg)
+![Screenshot 6](screen_shots/screenshot12.jpg)
+![Screenshot 4](screen_shots/screenshot13.jpg)
+![Screenshot 5](screen_shots/screenshot14.jpg)
+![Screenshot 6](screen_shots/screenshot15.jpg)
+![Screenshot 6](screen_shots/screenshot16.jpg)
+![Screenshot 4](screen_shots/screenshot17.jpg)
+![Screenshot 5](screen_shots/screenshot18.jpg)
+![Screenshot 6](screen_shots/screenshot19.jpg)
+
