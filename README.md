@@ -69,6 +69,11 @@ To run the project locally on your computer, follow these steps:
 5. **Test the Features**:
    - Navigate through all the pages (e.g., Destinations, About Us, Contact Us) to explore the functionality.
   
+## Project Presentation
+Download the full project presentation here:  
+[Presentation.pdf](presentation.pdf)
+
+  
 ## Screenshots
 
 Here are the screenshots of the entire website showcasing its features and pages:
