@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Destinations - Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Dream Destinations</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="booking.html">Booking</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Form Section -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Get in Touch</h2>
+        <form id="contactForm">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="contactName" class="form-label">Full Name</label>
+                    <input type="text" id="contactName" class="form-control" placeholder="Your Name" required>
+                    <small class="form-error text-danger" id="nameError"></small>
+                </div>
+                <div class="col-md-6">
+                    <label for="contactEmail" class="form-label">Email Address</label>
+                    <input type="email" id="contactEmail" class="form-control" placeholder="example@example.com" required>
+                    <small class="form-error text-danger" id="emailError"></small>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="contactPhone" class="form-label">Phone Number</label>
+                <input type="tel" id="contactPhone" class="form-control" placeholder="Your Phone Number" pattern="[0-9]{10}" required>
+                <small class="form-error text-danger" id="phoneError"></small>
+            </div>            
+            <div class="mb-3">
+                <label for="contactSubject" class="form-label">Subject</label>
+                <input type="text" id="contactSubject" class="form-control" placeholder="Reason for Contacting Us" required>
+                <small class="form-error text-danger" id="subjectError"></small>
+            </div>
+            <div class="mb-3">
+                <label for="contactMessage" class="form-label">Your Message</label>
+                <textarea id="contactMessage" class="form-control" rows="5" placeholder="Write your message here..."
+                    required></textarea>
+                <small class="form-error text-danger" id="messageError"></small>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+    </div>
+</section>
+
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Location</h2>
+            <div class="map-responsive">
+                <!-- Google Map Embed -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209325.5587863394!2d80.16345876447767!3d12.872070091544854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52676a56fc13fd%3A0xc0b5b56d305edd6c!2sDream%20Destinations!5e0!3m2!1sen!2sin!4v1733745993306!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <p class="text-center mt-3">Visit us at Dream Destinations, Chennai, India</p>
+        </div>
+    </section>
+    
+
+     <!-- Footer Section -->
+     <footer class="bg-dark text-white py-3 text-center">
+        <p>&copy; 2024 Dream Destinations | Connect with us: 
+            <a href="#" class="text-warning">Facebook</a> | 
+            <a href="#" class="text-warning">Twitter</a> | 
+            <a href="#" class="text-warning">Instagram</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>

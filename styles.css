@@ -1,0 +1,399 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+ 
+/* home section*/
+
+/* General Styles */
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: transparent;
+    background: linear-gradient(45deg, #007bff, #00d4ff);
+    -webkit-background-clip: text;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2), 0 0 25px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Carousel General Styles */
+.carousel-inner img {
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+    color: #fff;
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.carousel-caption p {
+    font-size: 1.1rem;
+}
+
+/* Carousel Navigation Arrows */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+}
+
+
+/* Carousel Indicators */
+.carousel-indicators li {
+    background-color: #007bff;
+}
+
+.carousel-indicators .active {
+    background-color: #0056b3;
+}
+
+/* Hover Effects for Carousel Items */
+.carousel-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Auto-Slide Input Styling */
+.form-group {
+    margin: 40px auto 0;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#autoSlideInterval {
+    font-size: 1.2rem;
+    padding: 15px;
+    width: 80%;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#autoSlideInterval:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 8px rgba(0, 91, 255, 0.5);
+}
+
+#autoSlideInterval::placeholder {
+    color: #777;
+    font-style: italic;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* "Top Destinations" Section - Card Styling */
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 5px;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #e9ecef;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        font-size: 16px;
+    }
+}
+
+/* Rating Stars */
+.rating {
+    color: #FFD700; /* Yellow for stars */
+    font-size: 1.2rem; /* Slightly larger stars */
+    margin-bottom: 10px; /* Space below stars */
+}
+.rating .fa-star {
+    margin-right: 2px; /* Space between stars */
+}
+
+/* Destination Details Styling */
+#destinationName {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+#destinationDescription {
+    margin-top: 10px;
+    line-height: 1.8;
+}
+
+.modal-content {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* About us page styles*/
+
+h2,h3 {
+            color: #007bff;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* Mission Section */
+        #missionStatement {
+            background: linear-gradient(135deg, #e0eafc, #cfdef3);
+            padding: 20px;
+            border-radius: 10px;
+            color: #333;
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Team Card Styling */
+        .team-card {
+            transition: transform 0.2s ease-in-out;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .team-card img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+            margin: auto;
+        }
+
+        .team-card h5 {
+            color: #007bff;
+        }
+
+        /* General about us layout tweaks */
+        .container.about-section {
+            text-align: center;
+            padding: 40px 0;
+        }
+        /* styles for booking page */
+        .form-error {
+            color: red;
+            font-size: 0.9rem;
+            display: none;
+        }
+
+/* Back to Top Button Styling */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Hidden initially */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.back-to-top:hover {
+    background-color: #0056b3;
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+#conversionResult {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* General Footer Styling */
+footer {
+    background: linear-gradient(to right, #3a3939, #5f5c5c); /* Subtle grey gradient */
+    color: #333;
+    padding: 20px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    border-top: 2px solid #007bff;
+  }
+  
+  /* Contact Form Styling */
+  footer form {
+    max-width: 500px;
+    margin: 10px auto;
+    padding: 15px;
+    background-color: #bab4b4;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer input,
+  footer textarea {
+    border: 1px solid #777;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    padding: 8px;
+  }
+  
+  footer input:focus,
+  footer textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Button Styling */
+  footer .btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  footer .btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+  }
+  
+  /* Change the color of the copyright text */
+footer p {
+    color: #fff6f6;
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    footer form {
+      width: 100%;
+    }
+  }
+  
+/* Force styles with higher specificity */
+.navbar {
+    background-color: #23619f !important; /* Deep blue background */
+    border-bottom: 3px solid #00bfff; /* Subtle blue border effect */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Navbar Link Styles */
+  .navbar-nav .nav-link {
+    color: #ffffff !important; /* White text for visibility */
+    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Hover effects */
+  .navbar-nav .nav-link:hover {
+    color: #00bfff;
+    transform: translateY(-2px);
+  }
+  
+/* Active Navigation Link */
+.navbar-nav .nav-link.active {
+    color: #ffd700 !important; /* Gold color to indicate active page */
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  /* Adjustments for responsive design */
+  @media (max-width: 768px) {
+    .navbar-nav .nav-link {
+      font-size: 0.9rem;
+    }
+  }
+  
+/* General Styling */
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+/* Gradient Background for About Section */
+.bg-gradient {
+    background: linear-gradient(to right, #d3cce5, #e9e4f0);
+    color: #333;
+    padding: 20px 0;
+}
+
+/* Accordion Enhancements */
+.accordion-button {
+    transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Footer Styling */
+footer a:hover {
+    text-decoration: underline;
+}

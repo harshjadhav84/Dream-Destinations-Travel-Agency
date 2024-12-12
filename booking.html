@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Destinations - Booking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Dream Destinations</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="booking.html">Booking</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Left Column: Booking Form -->
+                <div class="col-md-8">
+                    <h2 class="text-start mb-4">Book Your Dream Vacation</h2>
+                    <form id="bookingForm">
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                                <small class="form-error" id="nameError">Name is required.</small>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" id="email" class="form-control" placeholder="example@example.com" required>
+                                <small class="form-error" id="emailError">Enter a valid email address.</small>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="travelDates" class="form-label">Travel Dates</label>
+                            <input type="date" id="travelDates" class="form-control" required>
+                            <small class="form-error" id="dateError">Please select valid travel dates.</small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="package" class="form-label">Select Package</label>
+                            <select id="package" class="form-select" required>
+                                <option value="" disabled selected>Select a package</option>
+                                <option value="basic">Basic Package</option>
+                                <option value="premium">Premium Package</option>
+                                <option value="luxury">Luxury Package</option>
+                            </select>
+                            <small class="form-error" id="packageError">Please select a package.</small>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit Booking</button>
+                    </form>
+                </div>
+    
+               <!-- Currency Converter -->
+               <div class="col-lg-4">
+                <div class="currency-converter p-4 border rounded bg-white shadow">
+                    <h4 class="mb-4 text-center text-primary">Currency Converter</h4>
+                    <div class="converter-row mb-3">
+                        <label for="amountInput" class="form-label">Amount</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fas fa-dollar-sign"></i></span>
+                            <input type="number" id="amountInput" class="form-control" value="1">
+                        </div>
+                    </div>
+                    <div class="converter-row mb-3">
+                        <label for="fromCurrency" class="form-label">From Currency</label>
+                        <select id="fromCurrency" class="form-select">
+                            <option value="USD">United States Dollar</option>
+                            <option value="EUR">Euro</option>
+                            <option value="INR">Indian Rupee</option>
+                            <option value="GBP">British Pound</option>
+                        </select>
+                    </div>
+                    <div class="converter-row mb-3">
+                        <label for="toCurrency" class="form-label">To Currency</label>
+                        <select id="toCurrency" class="form-select">
+                            <option value="INR">Indian Rupee</option>
+                            <option value="USD">United States Dollar</option>
+                            <option value="EUR">Euro</option>
+                            <option value="GBP">British Pound</option>
+                        </select>
+                    </div>
+                    <div class="converter-row mb-4">
+                        <label for="convertedAmount" class="form-label">Converted Amount</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fas fa-exchange-alt"></i></span>
+                            <input type="text" id="convertedAmount" class="form-control" value="84.87" readonly>
+                        </div>
+                    </div>
+                    <button class="btn btn-success w-100">Convert</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+  
+
+   <!-- Footer Section -->
+   <footer class="bg-dark text-white py-3 text-center">
+    <p>&copy; 2024 Dream Destinations | Connect with us: 
+        <a href="#" class="text-warning">Facebook</a> | 
+        <a href="#" class="text-warning">Twitter</a> | 
+        <a href="#" class="text-warning">Instagram</a>
+    </p>
+</footer>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const rates = {
+            USD: { INR: 84.87, EUR: 0.95, GBP: 0.78 },
+            INR: { USD: 0.012, EUR: 0.011, GBP: 0.0092 },
+            EUR: { USD: 1.05, INR: 89.35, GBP: 0.83 },
+            GBP: { USD: 1.27, INR: 108.21, EUR: 1.21 },
+          };
+      
+          const amountInput = document.getElementById("amountInput");
+          const fromCurrency = document.getElementById("fromCurrency");
+          const toCurrency = document.getElementById("toCurrency");
+          const convertedAmount = document.getElementById("convertedAmount");
+      
+          function convertCurrency() {
+            const from = fromCurrency.value;
+            const to = toCurrency.value;
+            const amount = parseFloat(amountInput.value);
+      
+            if (rates[from] && rates[from][to]) {
+              const result = (amount * rates[from][to]).toFixed(2);
+              convertedAmount.value = result;
+            } else {
+              convertedAmount.value = "N/A";
+            }
+          }
+      
+          // Event Listeners
+          amountInput.addEventListener("input", convertCurrency);
+          fromCurrency.addEventListener("change", convertCurrency);
+          toCurrency.addEventListener("change", convertCurrency);
+        });
+      </script>
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js" defer></script>
+
+    
+</body>
+
+</html>
